@@ -42,11 +42,6 @@ const nextConfig = {
       },
       {
         protocol: 'https',
-        hostname: 'xmc-*.**',
-        port: '',
-      },
-      {
-        protocol: 'https',
         hostname: 'feaas*.blob.core.windows.net',
         port: '',
       },

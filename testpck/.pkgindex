@@ -1,0 +1,10 @@
+﻿# If this package is unpacked, this file can be safely deleted.
+---
+Entry: |
+  nextjs-starter\serialization\DefaultRenderingHost\Default.yml
+DB: master
+ID: "dffee92b-0441-45a4-9207-67810b72bd46"
+Parent: "895e25c4-12b2-4b2c-8233-82f3b79eef53"
+Template: "bc71d442-3e4f-46ba-887c-746e54f9bb83"
+Path: /sitecore/system/Settings/Services/Rendering Hosts/Default
+Signature: ra02w0wZUpZgiBXeLlFOUeYdIpGrPo0MdTSiM83j4gk=

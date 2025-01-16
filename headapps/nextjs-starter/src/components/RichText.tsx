@@ -11,7 +11,7 @@ export type RichTextProps = {
 };
 
 export const Default = (props: RichTextProps): JSX.Element => {
- console.log("!!!!! Public Urls" + process.env.PUBLIC_URL);
+  console.log("!!!!! Public Urls" + process.env.PUBLIC_URL);
   const text = props.fields ? (
     <JssRichText field={props.fields.Text} />
   ) : (

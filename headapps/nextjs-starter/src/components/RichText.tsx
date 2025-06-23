@@ -1,4 +1,4 @@
-import React from 'react';
+import { JSX } from 'react';
 import { Field, RichText as JssRichText } from '@sitecore-jss/sitecore-jss-nextjs';
 
 interface Fields {
@@ -11,7 +11,6 @@ export type RichTextProps = {
 };
 
 export const Default = (props: RichTextProps): JSX.Element => {
-  console.log("'ENV:·'" + process.env.PUBLIC_URL);
   const text = props.fields ? (
     <JssRichText field={props.fields.Text} />
   ) : (
@@ -21,7 +20,7 @@ export const Default = (props: RichTextProps): JSX.Element => {
 
   return (
     <div
-      className={`component rich-text ${props.params.styles.trimEnd()}`}
+      className={`component rich-text ${props?.params?.styles.trimEnd()}`}
       id={id ? id : undefined}
     >
       <div className="component-content">{text}</div>

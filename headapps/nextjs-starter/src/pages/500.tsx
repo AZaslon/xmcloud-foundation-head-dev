@@ -1,3 +1,4 @@
+import { JSX } from 'react';
 import Head from 'next/head';
 import {
   GraphQLErrorPagesService,
@@ -56,7 +57,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
   });
   let resultErrorPages: ErrorPages | null = null;
 
-  if (!process.env.DISABLE_SSG_FETCH) {
+  if (process.env.DISABLE_SSG_FETCH?.toLowerCase() !== 'true') {
     try {
       resultErrorPages = await errorPagesService.fetchErrorPages();
     } catch (error) {
